@@ -1,0 +1,325 @@
+{
+  "per_document": {
+    "resume": {
+      "person": {
+        "true_positives": 2,
+        "pred_correct": 3,
+        "predicted": 6,
+        "expected": 2,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "email": {
+        "true_positives": 2,
+        "pred_correct": 2,
+        "predicted": 2,
+        "expected": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "phone": {
+        "true_positives": 2,
+        "pred_correct": 2,
+        "predicted": 4,
+        "expected": 2,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "date": {
+        "true_positives": 1,
+        "pred_correct": 1,
+        "predicted": 1,
+        "expected": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "address": {
+        "true_positives": 1,
+        "pred_correct": 1,
+        "predicted": 1,
+        "expected": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "company": {
+        "true_positives": 3,
+        "pred_correct": 3,
+        "predicted": 3,
+        "expected": 4,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571
+      }
+    },
+    "bank_statement": {
+      "company": {
+        "true_positives": 2,
+        "pred_correct": 3,
+        "predicted": 3,
+        "expected": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "person": {
+        "true_positives": 1,
+        "pred_correct": 1,
+        "predicted": 2,
+        "expected": 2,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "address": {
+        "true_positives": 2,
+        "pred_correct": 2,
+        "predicted": 2,
+        "expected": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "date": {
+        "true_positives": 4,
+        "pred_correct": 4,
+        "predicted": 4,
+        "expected": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "email": {
+        "true_positives": 2,
+        "pred_correct": 2,
+        "predicted": 2,
+        "expected": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "phone": {
+        "true_positives": 2,
+        "pred_correct": 2,
+        "predicted": 4,
+        "expected": 2,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      }
+    },
+    "legal_agreement": {
+      "date": {
+        "true_positives": 5,
+        "pred_correct": 4,
+        "predicted": 4,
+        "expected": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "company": {
+        "true_positives": 1,
+        "pred_correct": 2,
+        "predicted": 4,
+        "expected": 1,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "person": {
+        "true_positives": 2,
+        "pred_correct": 3,
+        "predicted": 5,
+        "expected": 2,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75
+      },
+      "address": {
+        "true_positives": 0,
+        "pred_correct": 0,
+        "predicted": 0,
+        "expected": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "email": {
+        "true_positives": 2,
+        "pred_correct": 2,
+        "predicted": 2,
+        "expected": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "phone": {
+        "true_positives": 2,
+        "pred_correct": 2,
+        "predicted": 3,
+        "expected": 2,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      }
+    },
+    "invoice": {
+      "date": {
+        "true_positives": 1,
+        "pred_correct": 1,
+        "predicted": 1,
+        "expected": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "company": {
+        "true_positives": 1,
+        "pred_correct": 1,
+        "predicted": 4,
+        "expected": 2,
+        "precision": 0.25,
+        "recall": 0.5,
+        "f1": 0.3333
+      },
+      "address": {
+        "true_positives": 0,
+        "pred_correct": 0,
+        "predicted": 1,
+        "expected": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "email": {
+        "true_positives": 3,
+        "pred_correct": 3,
+        "predicted": 3,
+        "expected": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "phone": {
+        "true_positives": 2,
+        "pred_correct": 2,
+        "predicted": 3,
+        "expected": 2,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "person": {
+        "true_positives": 1,
+        "pred_correct": 1,
+        "predicted": 1,
+        "expected": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "meeting_minutes": {
+      "company": {
+        "true_positives": 1,
+        "pred_correct": 1,
+        "predicted": 2,
+        "expected": 1,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "date": {
+        "true_positives": 4,
+        "pred_correct": 4,
+        "predicted": 4,
+        "expected": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "person": {
+        "true_positives": 4,
+        "pred_correct": 4,
+        "predicted": 7,
+        "expected": 4,
+        "precision": 0.5714,
+        "recall": 1.0,
+        "f1": 0.7273
+      },
+      "email": {
+        "true_positives": 1,
+        "pred_correct": 1,
+        "predicted": 1,
+        "expected": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "phone": {
+        "true_positives": 1,
+        "pred_correct": 1,
+        "predicted": 1,
+        "expected": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "overall": {
+    "person": {
+      "precision": 0.5714,
+      "recall": 0.9091,
+      "f1": 0.7018,
+      "true_positives": 10,
+      "predicted": 21,
+      "expected": 11
+    },
+    "email": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 10,
+      "predicted": 10,
+      "expected": 10
+    },
+    "phone": {
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1": 0.75,
+      "true_positives": 9,
+      "predicted": 15,
+      "expected": 9
+    },
+    "date": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 15,
+      "predicted": 14,
+      "expected": 15
+    },
+    "address": {
+      "precision": 0.75,
+      "recall": 0.5,
+      "f1": 0.6,
+      "true_positives": 3,
+      "predicted": 4,
+      "expected": 6
+    },
+    "company": {
+      "precision": 0.625,
+      "recall": 0.8,
+      "f1": 0.7018,
+      "true_positives": 8,
+      "predicted": 16,
+      "expected": 10
+    }
+  }
+}

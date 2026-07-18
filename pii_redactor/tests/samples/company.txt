@@ -1,0 +1,55 @@
+=== VALID ===
+KSH International Limited
+Reliance Industries Ltd
+Tata Consultancy Services Pvt. Ltd.
+HDFC Bank Limited
+Infosys Limited
+Wipro Ltd
+Bajaj Finance LLP
+ITC Limited
+Larsen & Toubro Ltd
+Mahindra & Mahindra Limited
+Dr. Reddy's Laboratories Ltd
+Sun Pharmaceutical Industries Ltd
+
+=== INVALID ===
+Board
+Committee
+Promoter
+Director
+Company
+Companies
+The Company
+Our Company
+Registered Office
+Corporate Office
+Business Centre
+Head Office
+Branch Office
+
+=== FALSE POSITIVES ===
+Company Act
+Companies Act
+SEBI
+RBI
+Section 123
+Clause 456
+Regulation 789
+The company believes
+Our company is
+
+=== FORMATTING ===
+KSH International Limited
+ksh international limited
+KSH INTERNATIONAL LIMITED
+Ksh International Limited
+K.S.H. International Limited
+
+=== EDGE CASES ===
+SingleWord Ltd
+Xyz Private Limited
+The ABC Corp
+
+=== KNOWN LIMITATIONS ===
+ABC
+A & B Company

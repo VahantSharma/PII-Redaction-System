@@ -1,0 +1,48 @@
+=== VALID ===
+john@example.com
+jane.doe@company.co.in
+admin@sub.domain.org
+user+tag@gmail.com
+first.last@university.edu
+sales@my-company.com
+info@123shop.in
+test@example.museum
+name@domain.ca
+contact@company.co.uk
+hello@world.io
+support@help-desk.net
+user.name@company.com
+hr@organization.org
+billing@service.co
+
+=== INVALID ===
+john@gmail
+john@@gmail.com
+john@gmail..com
+@no-local.com
+no-at-sign.com
+user@
+john@localhost
+plainaddress
+missing-at-sign.com
+
+=== FALSE POSITIVES ===
+Version 2.0.1
+Section 4.5.6
+Order #12345
+
+=== FORMATTING ===
+JOHN@EXAMPLE.COM
+John@Example.Com
+john@example.com
+
+=== EDGE CASES ===
+a@b.co
+very.long.email.address.that.might.cause.issues@very-long-domain-name.example.com
+name@-hyphen.com
+
+=== KNOWN LIMITATIONS ===
+john @example.com
+john@ example.com
+user@192.168.1.1
+123@456.789

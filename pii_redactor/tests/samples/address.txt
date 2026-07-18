@@ -1,0 +1,34 @@
+=== VALID ===
+123 Main Street, Pune 411001
+Plot No. 45, Sector 12, Noida 201301
+Flat 302, Sunrise Tower, Andheri West, Mumbai 400058
+Office No. 5, Floor 3, Business Park, Bangalore 560001
+Village Rahata, Taluka Shrirampur, Dist Ahmednagar 422101
+
+=== INVALID ===
+Sector 21
+Road 12
+Building A
+Room 404
+PIN 411001
+Pune, Maharashtra
+411001
+
+=== FALSE POSITIVES ===
+Registered Office: Pune
+Corporate Office: Mumbai
+Head Office: Delhi
+Branch Office: Chennai
+
+=== FORMATTING ===
+123 Main Street, Pune 411001
+123 Main Street, Pune-411001
+123 Main Street Pune 411001
+123, Main Street, Pune, 411001
+
+=== EDGE CASES ===
+411001
+Pune 411001
+Plot No.
+Tower 5
+Floor 3

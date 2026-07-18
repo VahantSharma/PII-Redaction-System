@@ -1,0 +1,49 @@
+=== VALID ===
+Rajesh Kumar
+Priya Sharma
+Vikram Singh
+Contact Person: John Smith
+Director: Michael Johnson
+Manager: Sarah Williams
+
+=== INVALID ===
+Pune
+Delhi
+Mumbai
+Bangalore
+Board
+Committee
+Meeting
+Resolution
+Section
+Clause
+Promoter
+Shareholder
+
+=== FALSE POSITIVES ===
+The promoter stated
+Board meeting held
+Shareholder meeting
+Committee resolution
+Section 4.5
+Director meeting
+
+=== FORMATTING ===
+Rajesh Kumar
+Rajesh  Kumar
+
+=== EDGE CASES ===
+
+=== KNOWN LIMITATIONS ===
+Amit Patel
+Sneha Reddy
+Ananya Desai
+rajesh kumar
+RAJESH KUMAR
+RAJESH  KUMAR
+A
+AB
+Rajesh
+Single Name Here
+Contact Person: A B
+Director: X

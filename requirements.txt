@@ -1,0 +1,6 @@
+python-docx>=0.8.11
+spacy>=3.0.0
+faker>=18.0.0
+fastapi>=0.115.0,<1.0.0
+uvicorn>=0.23.0
+python-multipart>=0.0.6

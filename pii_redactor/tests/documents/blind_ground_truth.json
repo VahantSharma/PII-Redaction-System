@@ -1,0 +1,255 @@
+{
+  "employment_contract": {
+    "filename": "blind_employment_001.docx",
+    "ground_truth": [
+      {
+        "text": "Bharat Heavy Electricals Limited",
+        "type": "company"
+      },
+      {
+        "text": "BHEL",
+        "type": "company"
+      },
+      {
+        "text": "BHEL House, Siri Fort, New Delhi 110016",
+        "type": "address"
+      },
+      {
+        "text": "Sanjay Kulkarni",
+        "type": "person"
+      },
+      {
+        "text": "25 December 1987",
+        "type": "date"
+      },
+      {
+        "text": "15 Aundh Road, Pune 411007",
+        "type": "address"
+      },
+      {
+        "text": "sanjay.kulkarni@bhel.com",
+        "type": "email"
+      },
+      {
+        "text": "+91 98234 56789",
+        "type": "phone"
+      },
+      {
+        "text": "01 July 2024",
+        "type": "date"
+      },
+      {
+        "text": "20 June 2024",
+        "type": "date"
+      },
+      {
+        "text": "Priya Raghavan",
+        "type": "person"
+      },
+      {
+        "text": "priya.raghavan@bhel.com",
+        "type": "email"
+      }
+    ]
+  },
+  "medical_report": {
+    "filename": "blind_medical_002.docx",
+    "ground_truth": [
+      {
+        "text": "Meena Iyer",
+        "type": "person"
+      },
+      {
+        "text": "03 August 1992",
+        "type": "date"
+      },
+      {
+        "text": "meena.iyer@email.com",
+        "type": "email"
+      },
+      {
+        "text": "022 2345 6789",
+        "type": "phone"
+      },
+      {
+        "text": "Apollo Hospitals Enterprise Ltd",
+        "type": "company"
+      },
+      {
+        "text": "21 Greams Road, Chennai 600006",
+        "type": "address"
+      },
+      {
+        "text": "10 March 2024",
+        "type": "date"
+      },
+      {
+        "text": "10 April 2024",
+        "type": "date"
+      },
+      {
+        "text": "Venkatesh Rao",
+        "type": "person"
+      },
+      {
+        "text": "dr.venkatesh@apollohospitals.com",
+        "type": "email"
+      },
+      {
+        "text": "+91 44 2829 3333",
+        "type": "phone"
+      }
+    ]
+  },
+  "vendor_agreement": {
+    "filename": "blind_vendor_003.docx",
+    "ground_truth": [
+      {
+        "text": "15 May 2024",
+        "type": "date"
+      },
+      {
+        "text": "Zomato Limited",
+        "type": "company"
+      },
+      {
+        "text": "Tower C, DLF Cyber City, Gurugram 122002",
+        "type": "address"
+      },
+      {
+        "text": "Nisha Aggarwal",
+        "type": "person"
+      },
+      {
+        "text": "nisha.aggarwal@zomato.com",
+        "type": "email"
+      },
+      {
+        "text": "+91 98111 22233",
+        "type": "phone"
+      },
+      {
+        "text": "FreshCart Solutions Pvt. Ltd.",
+        "type": "company"
+      },
+      {
+        "text": "42 Koramangala, Bengaluru 560034",
+        "type": "address"
+      },
+      {
+        "text": "Kiran Bhat",
+        "type": "person"
+      },
+      {
+        "text": "kiran.bhat@freshcart.in",
+        "type": "email"
+      },
+      {
+        "text": "080 2555 6677",
+        "type": "phone"
+      },
+      {
+        "text": "01 June 2024",
+        "type": "date"
+      },
+      {
+        "text": "31 May 2025",
+        "type": "date"
+      },
+      {
+        "text": "Aditya Malhotra",
+        "type": "person"
+      }
+    ]
+  },
+  "tax_notice": {
+    "filename": "blind_tax_004.docx",
+    "ground_truth": [
+      {
+        "text": "Suresh Pillai",
+        "type": "person"
+      },
+      {
+        "text": "8 Marine Drive, Kochi 682031",
+        "type": "address"
+      },
+      {
+        "text": "17 November 1979",
+        "type": "date"
+      },
+      {
+        "text": "suresh.pillai@gmail.com",
+        "type": "email"
+      },
+      {
+        "text": "+91 94444 55566",
+        "type": "phone"
+      },
+      {
+        "text": "25 March 2024",
+        "type": "date"
+      },
+      {
+        "text": "Kavitha Nair",
+        "type": "person"
+      },
+      {
+        "text": "kavitha.nair@incometax.gov.in",
+        "type": "email"
+      }
+    ]
+  },
+  "partnership_deed": {
+    "filename": "blind_partnership_005.docx",
+    "ground_truth": [
+      {
+        "text": "01 September 2024",
+        "type": "date"
+      },
+      {
+        "text": "Arun Sharma",
+        "type": "person"
+      },
+      {
+        "text": "23 Nehru Nagar, Jaipur 302001",
+        "type": "address"
+      },
+      {
+        "text": "arun.sharma@gmail.com",
+        "type": "email"
+      },
+      {
+        "text": "+91 99887 11223",
+        "type": "phone"
+      },
+      {
+        "text": "05 February 1983",
+        "type": "date"
+      },
+      {
+        "text": "Deepika Chopra",
+        "type": "person"
+      },
+      {
+        "text": "67 Civil Lines, Lucknow 226001",
+        "type": "address"
+      },
+      {
+        "text": "deepika.chopra@yahoo.com",
+        "type": "email"
+      },
+      {
+        "text": "0522 234 5678",
+        "type": "phone"
+      },
+      {
+        "text": "12 September 1986",
+        "type": "date"
+      },
+      {
+        "text": "31 August 2029",
+        "type": "date"
+      }
+    ]
+  }
+}

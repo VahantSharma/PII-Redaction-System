@@ -1,0 +1,271 @@
+{
+  "resume": {
+    "filename": "resume_001.docx",
+    "ground_truth": [
+      {
+        "text": "Rahul Sharma",
+        "type": "person"
+      },
+      {
+        "text": "rahul.sharma@gmail.com",
+        "type": "email"
+      },
+      {
+        "text": "+91 98765 43210",
+        "type": "phone"
+      },
+      {
+        "text": "15 March 1990",
+        "type": "date"
+      },
+      {
+        "text": "42 MG Road, Mumbai 400001",
+        "type": "address"
+      },
+      {
+        "text": "Infosys Limited",
+        "type": "company"
+      },
+      {
+        "text": "Tata Consultancy Services Pvt. Ltd.",
+        "type": "company"
+      },
+      {
+        "text": "Indian Institute of Technology",
+        "type": "company"
+      },
+      {
+        "text": "Priya Verma",
+        "type": "person"
+      },
+      {
+        "text": "Wipro Ltd",
+        "type": "company"
+      },
+      {
+        "text": "priya.verma@wipro.com",
+        "type": "email"
+      },
+      {
+        "text": "+91 87654 32109",
+        "type": "phone"
+      }
+    ]
+  },
+  "bank_statement": {
+    "filename": "bank_statement_002.docx",
+    "ground_truth": [
+      {
+        "text": "HDFC BANK LIMITED",
+        "type": "company"
+      },
+      {
+        "text": "HDFC Bank Limited",
+        "type": "company"
+      },
+      {
+        "text": "Vikram Singh",
+        "type": "person"
+      },
+      {
+        "text": "15 Park Street, Kolkata 700016",
+        "type": "address"
+      },
+      {
+        "text": "22 July 1985",
+        "type": "date"
+      },
+      {
+        "text": "vikram.singh@hdfcbank.com",
+        "type": "email"
+      },
+      {
+        "text": "+91 99887 76655",
+        "type": "phone"
+      },
+      {
+        "text": "01 January 2024",
+        "type": "date"
+      },
+      {
+        "text": "15 February 2024",
+        "type": "date"
+      },
+      {
+        "text": "18 March 2024",
+        "type": "date"
+      },
+      {
+        "text": "Ananya Desai",
+        "type": "person"
+      },
+      {
+        "text": "support@hdfcbank.com",
+        "type": "email"
+      },
+      {
+        "text": "022 2409 4400",
+        "type": "phone"
+      },
+      {
+        "text": "HDFC Bank House",
+        "type": "address"
+      }
+    ]
+  },
+  "legal_agreement": {
+    "filename": "legal_agreement_003.docx",
+    "ground_truth": [
+      {
+        "text": "01 April 2024",
+        "type": "date"
+      },
+      {
+        "text": "31 March 2025",
+        "type": "date"
+      },
+      {
+        "text": "KSH International Limited",
+        "type": "company"
+      },
+      {
+        "text": "Rajesh Kumar",
+        "type": "person"
+      },
+      {
+        "text": "78 Civil Lines, Delhi 110001",
+        "type": "address"
+      },
+      {
+        "text": "rajesh.kumar@kshintl.com",
+        "type": "email"
+      },
+      {
+        "text": "+91 98765 12345",
+        "type": "phone"
+      },
+      {
+        "text": "01 April 2024",
+        "type": "date"
+      },
+      {
+        "text": "31 March 2025",
+        "type": "date"
+      },
+      {
+        "text": "Sunil Mehta",
+        "type": "person"
+      },
+      {
+        "text": "sunil.mehta@kshintl.com",
+        "type": "email"
+      },
+      {
+        "text": "+91 22 2654 3210",
+        "type": "phone"
+      },
+      {
+        "text": "10 October 1988",
+        "type": "date"
+      }
+    ]
+  },
+  "invoice": {
+    "filename": "invoice_004.docx",
+    "ground_truth": [
+      {
+        "text": "15 March 2024",
+        "type": "date"
+      },
+      {
+        "text": "Larsen & Toubro Ltd",
+        "type": "company"
+      },
+      {
+        "text": "L&T House, N.M. Marg, Ballard Estate Mumbai 400001",
+        "type": "address"
+      },
+      {
+        "text": "billing@larsentoubro.com",
+        "type": "email"
+      },
+      {
+        "text": "022 6752 5678",
+        "type": "phone"
+      },
+      {
+        "text": "Mahindra & Mahindra Limited",
+        "type": "company"
+      },
+      {
+        "text": "Gateway Building, Apollo Bunder Mumbai 400005",
+        "type": "address"
+      },
+      {
+        "text": "Amit Patel",
+        "type": "person"
+      },
+      {
+        "text": "amit.patel@mahindra.com",
+        "type": "email"
+      },
+      {
+        "text": "+91 98765 87654",
+        "type": "phone"
+      },
+      {
+        "text": "accounts@larsentoubro.com",
+        "type": "email"
+      }
+    ]
+  },
+  "meeting_minutes": {
+    "filename": "meeting_minutes_005.docx",
+    "ground_truth": [
+      {
+        "text": "ITC Limited",
+        "type": "company"
+      },
+      {
+        "text": "20 March 2024",
+        "type": "date"
+      },
+      {
+        "text": "Ravi Shankar Prasad",
+        "type": "person"
+      },
+      {
+        "text": "Meera Nair",
+        "type": "person"
+      },
+      {
+        "text": "Arun Kumar",
+        "type": "person"
+      },
+      {
+        "text": "Deepa Joshi",
+        "type": "person"
+      },
+      {
+        "text": "15 January 2024",
+        "type": "date"
+      },
+      {
+        "text": "01 June 2024",
+        "type": "date"
+      },
+      {
+        "text": "15 April 2024",
+        "type": "date"
+      },
+      {
+        "text": "deepa.joshi@itc.in",
+        "type": "email"
+      },
+      {
+        "text": "+91 124 456 7890",
+        "type": "phone"
+      }
+    ]
+  }
+}
