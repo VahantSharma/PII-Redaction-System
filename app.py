@@ -3,6 +3,7 @@
 Upload a .docx file, download the redacted version.
 """
 
+import asyncio
 import io
 import json
 import tempfile
@@ -14,6 +15,11 @@ from fastapi.responses import HTMLResponse, StreamingResponse
 from pii_redactor.main import redact_document
 
 app = FastAPI(title="DOCX PII Redaction System")
+
+
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -118,7 +124,10 @@ async def index():
 
       try {
         const resp = await fetch('/redact', { method: 'POST', body: formData });
-        if (!resp.ok) throw new Error('Redaction failed');
+        if (!resp.ok) {
+          const text = await resp.text();
+          throw new Error(text || 'Redaction failed');
+        }
 
         const blob = await resp.blob();
         const url = URL.createObjectURL(blob);
@@ -165,17 +174,18 @@ async def redact(file: UploadFile = File(...)):
     tmp_out_path = tmp_in_path.replace(".docx", "_redacted.docx")
 
     try:
-        stats = redact_document(tmp_in_path, tmp_out_path)
+        stats = await asyncio.to_thread(redact_document, tmp_in_path, tmp_out_path)
 
         with open(tmp_out_path, "rb") as f:
             out_bytes = f.read()
 
-        summary = {}
-        for pii_type, data in stats.items():
-            summary[pii_type] = {
+        summary = {
+            pii_type: {
                 "unique_originals": data["unique_originals"],
                 "occurrences_replaced": data["occurrences_replaced"],
             }
+            for pii_type, data in stats.items()
+        }
 
         return StreamingResponse(
             io.BytesIO(out_bytes),
@@ -185,6 +195,8 @@ async def redact(file: UploadFile = File(...)):
                 "X-Redaction-Stats": json.dumps(summary),
             },
         )
+    except Exception as e:
+        return HTMLResponse(f"Redaction failed: {str(e)}", status_code=500)
     finally:
         Path(tmp_in_path).unlink(missing_ok=True)
         Path(tmp_out_path).unlink(missing_ok=True)
