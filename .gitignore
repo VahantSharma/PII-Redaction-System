@@ -4,6 +4,7 @@ __pycache__/
 *.docx
 !sample_input.docx
 !sample_output.docx
+!test_small.docx
 .env
 *.egg-info/
 dist/
