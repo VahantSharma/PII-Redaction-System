@@ -92,6 +92,8 @@ uvicorn app:app --reload
 # Open http://localhost:8000
 ```
 
+> **⚠️ Live Demo Note:** The deployed demo at https://pii-redaction-system.onrender.com runs on Render's free tier (0.1 CPU, 512MB RAM). **Small documents (<500KB) work well.** Larger documents (1000+ paragraphs) may timeout due to the CPU-intensive nature of spaCy NER processing. The CLI tool (`python -m pii_redactor`) has no such limitation — it runs at full speed on any machine.
+
 ---
 
 ## Evaluation
@@ -174,4 +176,6 @@ Validated against 10 synthetic documents and 10 blind validation documents cover
 3. **Phone sub-span overlap**: The phone detector generates both `+91 98765 43210` and `98765 43210` as separate detections. The pipeline's overlap resolution correctly eliminates the shorter match, but raw detector output includes both.
 
 4. **Isolated names**: spaCy NER requires document context. Names in sparse documents may be missed.
+
+5. **Render free tier performance**: The deployed web demo runs on Render's free tier (0.1 CPU, 512MB RAM). Processing large documents (>500KB, 1000+ paragraphs) may exceed the free tier's processing capabilities. The CLI tool has no such limitation — it runs at full speed on any machine.
 
