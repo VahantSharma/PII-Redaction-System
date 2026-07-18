@@ -104,7 +104,7 @@ class EntityRegistry:
         fake_components = []
         for comp_type, comp_value in components:
             if comp_type == "postal_code":
-                fake_components.append(fake.numerify("4#####"))
+                fake_components.append(fake.numerify("######"))
             elif comp_type == "city":
                 fake_components.append(fake.city())
             elif comp_type == "state":
@@ -141,7 +141,7 @@ class EntityRegistry:
             part_lower = part.lower()
 
             # Postal code
-            if re.match(r'\b4\d{5}\b', part):
+            if re.match(r'(?<!\d)\d{6}(?!\d)', part):
                 components.append(("postal_code", part))
             # State
             elif any(state in part_lower for state in [

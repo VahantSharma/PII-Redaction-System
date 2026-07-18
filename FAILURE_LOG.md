@@ -75,7 +75,7 @@ This document tracks every issue discovered during development, testing, and val
 ### 12. Address: POSTAL_CODE_PATTERN only matched Mumbai PINs
 **File:** `pii_redactor/detectors/address.py`
 **Issue:** `\b4\d{2}\s?\d{3}\b` only matched PIN codes starting with 4 (Mumbai). All other Indian PINs (1-9) were missed.
-**Fix:** Changed to `(?<!\d)\d{6}(?!\d)` to match any valid6-digit Indian PIN code.
+**Fix:** Changed to `(?<!\d)\d{6}(?!\d)` to match any valid 6-digit Indian PIN code.
 **Status:** Fixed
 
 ### 13. Address: expand_to_sentence_boundary consumed entire document

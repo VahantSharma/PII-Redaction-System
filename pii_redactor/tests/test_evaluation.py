@@ -23,7 +23,7 @@ from pii_redactor.detectors import (
     detect_credit_cards_in_text,
     detect_national_ids_in_text,
 )
-from pii_redactor.replacement import build_run_mapping
+
 
 DOCUMENTS_DIR = Path(__file__).parent / "documents"
 

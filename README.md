@@ -128,40 +128,39 @@ Validated against 10 synthetic documents and 10 blind validation documents cover
 ## Project Structure
 
 ```
-pii_redactor/
-├── __main__.py              # CLI entry point
-├── main.py                  # Pipeline: process_run, redact_document
-├── parser.py                # DOCX I/O (load, save, extract runs)
-├── protocols.py             # Detector Protocol
-├── helpers.py               # regex_detect helper
-├── replacement.py           # Overlap resolution, ReplacementPlan, apply_edits
-├── replacer.py              # EntityRegistry, fake data generation
-├── detectors/
-│   ├── detection.py         # Detection NamedTuple
-│   ├── email.py             # Email detector
-│   ├── phone.py             # Phone detector (6 Indian formats)
-│   ├── person.py            # Person detector (spaCy NER + heuristics)
-│   ├── company.py           # Company detector (spaCy NER + suffixes)
-│   ├── address.py           # Address detector (structured extraction)
-│   ├── date.py              # Date detector (12 strptime formats)
-│   ├── credit_card.py       # Credit card detector (Luhn + brand)
-│   ├── national_id.py       # National ID detector (SSN formats)
-│   ├── ipv4.py              # IPv4 detector (ipaddress stdlib)
-│   └── ipv6.py              # IPv6 detector (ipaddress stdlib)
-├── tests/
-│   ├── test_corpus.py       # Corpus-based detection tests
-│   ├── test_stress.py       # Adversarial/edge-case tests
-│   ├── test_evaluation.py   # P/R/F1 evaluation framework
-│   ├── test_roundtrip.py    # Format preservation tests
-│   ├── test_*.py            # Per-detector unit tests
-│   ├── samples/             # 10 PII corpus files
-│   └── documents/           # Synthetic + blind test documents
+.
 ├── app.py                   # FastAPI web demo
 ├── requirements.txt         # Dependencies
 ├── README.md                # This file
 ├── FAILURE_LOG.md           # Issues found, fixed, and known limitations
 ├── sample_input.docx        # Example input document
-└── sample_output.docx       # Example redacted output
+├── sample_output.docx       # Example redacted output
+└── pii_redactor/            # Main package
+    ├── __main__.py          # CLI entry point
+    ├── main.py              # Pipeline: process_run, redact_document
+    ├── parser.py            # DOCX I/O (load, save, extract runs)
+    ├── replacement.py       # Overlap resolution, ReplacementPlan, apply_edits
+    ├── replacer.py          # EntityRegistry, fake data generation
+    ├── detectors/
+    │   ├── detection.py     # Detection NamedTuple
+    │   ├── email.py         # Email detector
+    │   ├── phone.py         # Phone detector (7 Indian formats)
+    │   ├── person.py        # Person detector (spaCy NER + heuristics)
+    │   ├── company.py       # Company detector (spaCy NER + suffixes)
+    │   ├── address.py       # Address detector (structured extraction)
+    │   ├── date.py          # Date detector (12 strptime formats)
+    │   ├── credit_card.py   # Credit card detector (Luhn + brand)
+    │   ├── national_id.py   # National ID detector (SSN formats)
+    │   ├── ipv4.py          # IPv4 detector (ipaddress stdlib)
+    │   └── ipv6.py          # IPv6 detector (ipaddress stdlib)
+    └── tests/
+        ├── test_corpus.py   # Corpus-based detection tests
+        ├── test_stress.py   # Adversarial/edge-case tests
+        ├── test_evaluation.py  # P/R/F1 evaluation framework
+        ├── test_roundtrip.py   # Format preservation tests
+        ├── test_*.py        # Per-detector unit tests
+        ├── samples/         # 10 PII corpus files
+        └── documents/       # Synthetic + blind test documents
 ```
 
 ---
@@ -176,8 +175,3 @@ pii_redactor/
 
 4. **Isolated names**: spaCy NER requires document context. Names in sparse documents may be missed.
 
----
-
-## License
-
-Internal use — Scaler AI Labs Internship Assignment.

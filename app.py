@@ -4,6 +4,7 @@ Upload a .docx file, download the redacted version.
 """
 
 import io
+import json
 import tempfile
 from pathlib import Path
 
@@ -169,7 +170,6 @@ async def redact(file: UploadFile = File(...)):
         with open(tmp_out_path, "rb") as f:
             out_bytes = f.read()
 
-        import json
         summary = {}
         for pii_type, data in stats.items():
             summary[pii_type] = {
